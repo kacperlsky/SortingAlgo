@@ -10,7 +10,16 @@ def mergeSort(array):
     return 0
 
 def selectionSort(array):
-    return 0
+    newr= list()
+    for i in range(len(array)):
+        minval = min(array)
+        
+        newr.append(minval)
+        indo = array.index(minval)
+        del(array[indo])
+        print("%i stage", newr)
+    
+    print(newr)
 
 def quickSort(array):
     return 0
